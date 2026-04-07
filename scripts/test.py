@@ -1,17 +1,32 @@
-import sys
+from google.cloud import bigquery
+from google.cloud.exceptions import NotFound
 import re
 from pathlib import Path
-import os.path
+import sys
 
 
-path = sys.argv[1]
+
+client = bigquery.Client()
+table_id = "bike-analytics-project-492312.bike_data.fact_bike_trips"
 
 
-filename = Path(path).name
-match = re.search(r"^(\d{4}(0[1-9]|1[0-2]))-divvy-tripdata.csv$", filename)
-if match:
-    print(match)
-    print(match.group())
+schema_source = 202505
 
-else:
-    print("unexpected file name it should follow the convetion YYYYMMYYYYMM-divvy-tripdata.csv")
+query = f"""
+select count(*) as number_rows
+from `bike-analytics-project-492312.bike_data.fact_bike_trips`
+where source_batch = {schema_source}
+"""
+
+
+
+
+
+query_job = client.query(query)
+
+results = query_job.result()
+
+
+row = next(results)  # get first (and only) row
+print(row.number_rows)
+    

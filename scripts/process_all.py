@@ -1,9 +1,18 @@
 from pathlib import Path
-from transform import transform
+import os.path
+from run_pipeline import run_pipeline
+
+
 folder = Path("data/raw")
-for file in folder.iterdir():
-    if file.is_file():
-        if (file.name).endswith(".csv"):
-            path = "data/raw/"+ file.name
-            transform(path)
+files = sorted(folder.glob("*-divvy-tripdata.csv"))
+for file in files:
+    try:
+        print(f"Processing {file.name}")
+        run_pipeline(str(file))
+    except Exception as e:
+        print(f"Processing the file {file.name} failed {e}")
+
+    
 print("All files processed")
+
+

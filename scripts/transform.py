@@ -24,7 +24,7 @@ def transform(path):
                 df["trip_month"] = df["started_at"].dt.month
                 df["trip_weekday"] = df["started_at"].dt.day_name()
                 df["trip_hour"] = df["started_at"].dt.hour
-
+                df["source_batch"] = match.group(1)
                 save_path = "data/processed"
                 if not os.path.isdir(save_path):
                     os.makedirs(save_path)
@@ -45,10 +45,11 @@ def transform(path):
     
 
 
+if __name__ == "__main__":
 
-def main():
     if len(sys.argv) > 1:
         path = sys.argv[1]
+     
         transform(path)
     else:
         print("no argument passed")

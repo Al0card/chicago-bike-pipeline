@@ -1,0 +1,13 @@
+.venv/
+data/
+docs/
+notebooks/
+README.md
+.python-version
+.git/
+.gitignore
+scripts/test.py
+scripts/check_processed.py
+scripts/combine.py
+__pycache__/
+*.pyc
