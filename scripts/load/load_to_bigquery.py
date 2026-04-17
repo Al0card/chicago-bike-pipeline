@@ -4,7 +4,9 @@ import os.path
 from pathlib import Path
 from google.cloud.exceptions import NotFound
 import re
+from dotenv import load_dotenv
 
+load_dotenv()
 def table_exists(client, table_id):
     try:
         client.get_table(table_id)
@@ -42,7 +44,11 @@ def load_to_bigquery(path):
     if os.path.isfile(path):
         if path.lower().endswith(".csv"):
             try:
-                client = bigquery.Client()
+                project_id = os.getenv("GOOGLE_CLOUD_PROJECT")
+
+                if not project_id:
+                    raise ValueError("GOOGLE_CLOUD_PROJECT is not set")
+                client = bigquery.Client(project=project_id)
                 table_id = "bike-analytics-project-492312.bike_data.fact_bike_trips"
                 
                 if not table_exists(client, table_id):

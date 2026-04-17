@@ -1,5 +1,5 @@
 FROM python:3.13
-WORKDIR /usr/local/pipline
+WORKDIR /usr/local/pipeline
 
 # Install applicaiton dependencies
 
