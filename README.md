@@ -215,9 +215,9 @@ docker build -t my-pipeline .
 ```
 docker run \
 -v "$(pwd)/data:/usr/local/pipeline/data" \
--v "~/.config/gcloud/application_default_credentials.json:/usr/local/pipeline/credentials/application_default_credentials.json" \
+-v "/path/to/your/application_default_credentials.json:/usr/local/pipeline/credentials/application_default_credentials.json" \
 -e GOOGLE_APPLICATION_CREDENTIALS="/usr/local/pipeline/credentials/application_default_credentials.json" \
--e GOOGLE_CLOUD_PROJECT="bike-analytics-project-492312" \
+-e GOOGLE_CLOUD_PROJECT="<your-project-id>" \
 my-pipeline
 ```
 
