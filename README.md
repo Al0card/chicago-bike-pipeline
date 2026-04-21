@@ -21,7 +21,7 @@ Bike-sharing systems generate large volumes of trip data. This project answers k
 
 ## 🏗️ Architecture
 
-![Architecture](report/architecture_diagram.png)
+![Architecture](./report/architecture_diagram.png)
 
 ### Pipeline Flow:
 
@@ -170,7 +170,7 @@ Dashboards are built in Looker Studio using dbt models.
 
 ### 📈 Dashboard 1
 
-![Dashboard 1](report/dashboard1.png)
+![Dashboard 1](./report/dashboard1.png)
 
 Contains:
 
@@ -181,7 +181,7 @@ Contains:
 
 ### 📊 Dashboard 2
 
-![Dashboard 2](report/dashboard2.png)
+![Dashboard 2](./report/dashboard2.png)
 
 Contains:
 
