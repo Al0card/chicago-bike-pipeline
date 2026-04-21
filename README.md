@@ -170,7 +170,7 @@ Dashboards are built in Looker Studio using dbt models.
 
 ### 📈 Dashboard 1
 
-![Dashboard 2](https://raw.githubusercontent.com/Al0card/chicago-bike-pipeline/main/report/dashboard1.png)
+![Dashboard 1](https://raw.githubusercontent.com/Al0card/chicago-bike-pipeline/main/report/dashboard1.png)
 
 Contains:
 
