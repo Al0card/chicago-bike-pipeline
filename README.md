@@ -1,3 +1,4 @@
+![Test](./report/dashboard1.png)
 # 🚴‍♂️ Chicago Bike Share Analytics Pipeline
 
 ## 📌 Project Overview
