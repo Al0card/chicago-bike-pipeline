@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bike_data           # A logical name for the source in dbt
+    database: bike-analytics-project-492312 # The BigQuery Project ID
+    schema: bike_data     # The BigQuery Dataset name
+    tables:
+      - name: fact_bike_trips
