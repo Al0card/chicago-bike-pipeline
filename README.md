@@ -21,7 +21,8 @@ Bike-sharing systems generate large volumes of trip data. This project answers k
 
 ## 🏗️ Architecture
 
-![Architecture](https://github.com/Al0card/chicago-bike-pipeline/blob/main/report/architecture_diagram.png?raw=1)
+<img width="1693" height="929" alt="architecture_diagram" src="https://github.com/user-attachments/assets/c21acd5d-9d9d-4b6c-aecd-824fd595f81c" />
+
 
 ### Pipeline Flow:
 
@@ -170,7 +171,8 @@ Dashboards are built in Looker Studio using dbt models.
 
 ### 📈 Dashboard 1
 
-![Dashboard 1](https://raw.githubusercontent.com/Al0card/chicago-bike-pipeline/main/report/dashboard1.png)
+<img width="991" height="740" alt="dashboard1" src="https://github.com/user-attachments/assets/1bab220c-b0de-48ae-af09-6736952b9a4c" />
+
 
 Contains:
 
@@ -181,7 +183,8 @@ Contains:
 
 ### 📊 Dashboard 2
 
-![Dashboard 2](https://raw.githubusercontent.com/Al0card/chicago-bike-pipeline/main/report/dashboard2.png)
+<img width="991" height="740" alt="dashboard2" src="https://github.com/user-attachments/assets/46340b14-d717-4ea9-b1d3-d8de3c80a4ee" />
+
 
 Contains:
 
