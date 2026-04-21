@@ -21,7 +21,7 @@ Bike-sharing systems generate large volumes of trip data. This project answers k
 
 ## 🏗️ Architecture
 
-![Architecture](https://raw.githubusercontent.com/Al0card/chicago-bike-pipeline/main/report/architecture_diagram.png)
+![Architecture](https://github.com/Al0card/chicago-bike-pipeline/blob/main/report/architecture_diagram.png?raw=1)
 
 ### Pipeline Flow:
 
